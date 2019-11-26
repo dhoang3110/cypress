@@ -1,0 +1,7 @@
+{
+  "defaultCommandTimeout": 8000,
+  "watchForFileChanges": false,
+  "chromeWebSecurity": false,
+  "baseUrl": "https://uat-cms.api.nine.com.au/auth/account/login?returnUrl=%2Fauth%2Fconnect%2Fauthorize%2Fcallback%3Fclient_id%3Dwebclient%26nonce%3D85e9be4ba3ec4c519d2ade56aeac2676%26redirect_uri%3Dhttp%253A%252F%252Flocalhost%253A8080%252Fcallback%26response_type%3Did_token%2520token%26scope%3Dopenid%2520profile%2520searchuat%2520templateuat%2520treenavuat%2520itemcruduat%2520activityuat%2520imageresizeruat%2520filesignuat%2520filerecorduat%2520proxyuat%2520pubuat%2520stickynoteuat%26state%3D893befaded1547d188a7a5c4a0ce3649",
+  "projectId": "2rgw5x"
+}
