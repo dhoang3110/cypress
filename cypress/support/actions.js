@@ -1,12 +1,14 @@
 /// <reference types="cypress" />
 const myItems = require('../fixtures/items')
+const profile = require('../fixtures/internal/profile')
 
 
 export function  logIn() {
     cy.visit("/")
     //cy.request("https://uat-cms.api.nine.com.au/auth/account/login?returnUrl=%2Fauth%2Fconnect%2Fauthorize%2Fcallback%3Fclient_id%3Dwebclient%26nonce%3D31148d136a434837bb38be6dc5d2b2d5%26redirect_uri%3Dhttp%253A%252F%252Flocalhost%253A8080%252Fcallback%26response_type%3Did_token%2520token%26scope%3Dopenid%2520profile%2520searchuat%2520templateuat%2520treenavuat%2520itemcruduat%2520activityuat%2520imageresizeruat%2520filesignuat%2520filerecorduat%2520proxyuat%2520pubuat%2520stickynoteuat%26state%3D73aded5cddca4356b8d9ca2dbd91a330")
-    cy.get('#username').type("dhoang")
-    cy.get('#password').type("Spring123")
+    
+    cy.get('#username').type(profile.username)
+    cy.get('#password').type(profile.password)
     cy.contains('Sign').click()
   }
 
