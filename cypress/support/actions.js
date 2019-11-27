@@ -1,6 +1,6 @@
 /// <reference types="cypress" />
 const myItems = require('../fixtures/items')
-const profile = require('../fixtures/internal/profile')
+const profile = require('../profile')
 
 
 export function  logIn() {
