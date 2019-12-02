@@ -18,6 +18,7 @@ describe('Test all sites dashboard', () => {
   myActions.selectSite(myItems.sites.News)
   myActions.navigateArticle(myItems.sites.News)
   myActions.editArticle()
+  myActions.publishArticle()
 
   // cy.wait(3000)
 

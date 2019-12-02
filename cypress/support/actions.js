@@ -16,6 +16,7 @@ export function  logIn() {
       //cy.get('div[class*=Layout__SiteSelectorToggle]').click()
       cy.get('div[class*="SiteSelector__Button"]').contains(site).click({ force: true })
     
+    
   }
 
   export function navigateArticle(site) {
@@ -42,9 +43,13 @@ export function  logIn() {
     cy.get('div[class*="ItemFields__RightColumn"]')
       .find('div[class*="RichText__StyledEditor"]')
       .click().clear().type('DongDong1')
+  }
 
+  export function publishArticle() {
     
+    cy.contains('Saving...').should('visible')
     cy.contains('Saved').should('visible')
+    
     cy.contains('Published + Changes').should('visible')
     cy.contains('Published + Changes')
       .should('have.css', 'background-color', 'rgb(255, 149, 0)' ) // Verify stattus Publish + Changes turns to yellow
