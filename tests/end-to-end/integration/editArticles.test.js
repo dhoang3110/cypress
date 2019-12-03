@@ -1,6 +1,5 @@
 /// <reference types="cypress" />
 const myItems = require('../fixtures/items')
-const expect = require('chai').expect
 import * as myActions from "../support/actions"
 
 

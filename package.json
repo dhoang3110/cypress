@@ -4,12 +4,17 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "open:e2e": "cypress open",
+    "test:e2e": "cypress run",
+    "open:e2e:local": "npm open test:e2e -- --config baseUrl=http://localhost:8080",
+    "test:e2e:local": "npm run test:e2e -- --config baseUrl=http://localhost:8080"
   },
   "keywords": [],
   "author": "Dong Hoang",
   "license": "ISC",
   "dependencies": {
+    "@testing-library/cypress": "^5.0.2",
     "chai": "^4.2.0",
     "cypress": "^3.6.1"
   }

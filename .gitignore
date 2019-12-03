@@ -1,3 +1,4 @@
 node_modules
-cypress/fixtures/profile.js
-examples
+tests/end-to-end/fixtures/profile.js
+tests/end-to-end/videos
+tests/end-to-end/screenshots

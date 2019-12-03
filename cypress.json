@@ -1,7 +1,13 @@
 {
-  "defaultCommandTimeout": 8000,
-  "watchForFileChanges": false,
-  "chromeWebSecurity": false,
-  "baseUrl": "https://press.uat.nine.com.au/",
-  "projectId": "2rgw5x"
-}
+    "fixturesFolder": "tests/end-to-end/fixtures",
+    "integrationFolder": "tests/end-to-end/integration",
+    "pluginsFile": "tests/end-to-end/plugins/index.js",
+    "screenshotsFolder": "tests/end-to-end/screenshots",
+    "videosFolder": "tests/end-to-end/videos",
+    "supportFile": "tests/end-to-end/support/index.js",
+    "defaultCommandTimeout": 8000,
+    "watchForFileChanges": false,
+    "chromeWebSecurity": false,
+    "baseUrl": "https://press.uat.nine.com.au/",
+    "projectId": "2rgw5x"
+  }

@@ -1,6 +1,5 @@
 /// <reference types="cypress" />
 const myItems = require('../fixtures/items')
-const expect = require('chai').expect
 import * as myActions from "../support/actions"
 
 
@@ -24,10 +23,12 @@ describe('Test Top Stories Fast and Slow Publish', () => {
     cy.get('span[class*="ListItem__ExpandToggle"]').eq(0).click()
     cy.contains('Top Stories Fast').click()
 
-    cy.get('input[class*="SelectPanel__Filter"]')
-      .get('input[placeholder="Search"]')
-      .get('input[name="filter"]')
-      .type('test')
+    cy.queryByLabelText('Stories').queryByPlaceholderText('Search').type('test');
+
+    // cy.get('input[class*="SelectPanel__Filter"]')
+    //   .get('input[placeholder="Search"]')
+    //   .get('input[name="filter"]')
+    //   .type('test')
 
     cy.contains('Add').eq(0).click()
     myActions.publishArticle()
